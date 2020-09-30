@@ -1,9 +1,6 @@
 
-exports.min = function min (array) {
-  const arrayLength = array.length;
+exports.min = array => array.length && Math.min(...array);
 
-  return arrayLength && array.reduce((m,el)=> Math.max(m,el), - Infinity)
-}
 
 exports.max = function max (array) {
   const arrayLength = array.length;
