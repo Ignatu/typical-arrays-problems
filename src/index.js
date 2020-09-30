@@ -1,5 +1,8 @@
 
-exports.min = array => array.length && Math.min(...array);
+exports.min = array =>
+if (array = []){
+    return 0;} else {
+array.length && Math.min(...array);}
 
 
 exports.max = array => array.length && Math.max(...array);
